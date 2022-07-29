@@ -9,7 +9,7 @@
 		"prepare": "svelte-kit sync",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"deploy": "node ./gh-pages.js"
+		"deploy": "node ./gh-pages.cjs"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
