@@ -1,11 +1,11 @@
 {
-  "node_modules/@fontsource/roboto/files/roboto-greek-400-normal.woff2": {
-    "file": "_app/immutable/assets/roboto-greek-400-normal-daf51ab5.woff2",
-    "src": "node_modules/@fontsource/roboto/files/roboto-greek-400-normal.woff2"
+  "src/lib/header/svelte-logo.svg": {
+    "file": "_app/immutable/assets/svelte-logo-87df40b8.svg",
+    "src": "src/lib/header/svelte-logo.svg"
   },
-  "node_modules/@fontsource/roboto/files/roboto-vietnamese-400-normal.woff2": {
-    "file": "_app/immutable/assets/roboto-vietnamese-400-normal-77b24796.woff2",
-    "src": "node_modules/@fontsource/roboto/files/roboto-vietnamese-400-normal.woff2"
+  "node_modules/@fontsource/roboto/files/roboto-cyrillic-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/roboto-cyrillic-ext-400-normal-b7ef2cd1.woff2",
+    "src": "node_modules/@fontsource/roboto/files/roboto-cyrillic-ext-400-normal.woff2"
   },
   "node_modules/@fontsource/roboto/files/roboto-cyrillic-400-normal.woff2": {
     "file": "_app/immutable/assets/roboto-cyrillic-400-normal-495d38d4.woff2",
@@ -15,29 +15,33 @@
     "file": "_app/immutable/assets/roboto-latin-ext-400-normal-3c23eb02.woff2",
     "src": "node_modules/@fontsource/roboto/files/roboto-latin-ext-400-normal.woff2"
   },
-  "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
-    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2"
+  "node_modules/@fontsource/roboto/files/roboto-greek-400-normal.woff2": {
+    "file": "_app/immutable/assets/roboto-greek-400-normal-daf51ab5.woff2",
+    "src": "node_modules/@fontsource/roboto/files/roboto-greek-400-normal.woff2"
   },
-  "node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
-    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2"
-  },
-  "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2": {
-    "file": "_app/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
-    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2"
+  "node_modules/@fontsource/roboto/files/roboto-vietnamese-400-normal.woff2": {
+    "file": "_app/immutable/assets/roboto-vietnamese-400-normal-77b24796.woff2",
+    "src": "node_modules/@fontsource/roboto/files/roboto-vietnamese-400-normal.woff2"
   },
   "node_modules/@fontsource/roboto/files/roboto-latin-400-normal.woff2": {
     "file": "_app/immutable/assets/roboto-latin-400-normal-f6734f81.woff2",
     "src": "node_modules/@fontsource/roboto/files/roboto-latin-400-normal.woff2"
   },
-  "node_modules/@fontsource/roboto/files/roboto-cyrillic-ext-400-normal.woff2": {
-    "file": "_app/immutable/assets/roboto-cyrillic-ext-400-normal-b7ef2cd1.woff2",
-    "src": "node_modules/@fontsource/roboto/files/roboto-cyrillic-ext-400-normal.woff2"
+  "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-cyrillic-400-normal.woff2"
   },
   "node_modules/@fontsource/fira-mono/files/fira-mono-greek-400-normal.woff2": {
     "file": "_app/immutable/assets/fira-mono-greek-400-normal-a8be01ce.woff2",
     "src": "node_modules/@fontsource/fira-mono/files/fira-mono-greek-400-normal.woff2"
+  },
+  "node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+    "src": "node_modules/@fontsource/fira-mono/files/fira-mono-greek-ext-400-normal.woff2"
   },
   "node_modules/@fontsource/fira-mono/files/fira-mono-latin-ext-400-normal.woff2": {
     "file": "_app/immutable/assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
@@ -56,28 +60,33 @@
     "src": "node_modules/@fontsource/fira-mono/files/fira-mono-all-400-normal.woff"
   },
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-027aab49.js",
+    "file": "_app/immutable/start-733ce583.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-0fe1eadc.js"
+      "_index-06ce5a74.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte"
+      "src/routes/about.svelte",
+      "src/routes/index.svelte",
+      "src/routes/projects/junia/docs/getting-started.svelte",
+      "src/routes/projects/junia/docs.svelte",
+      "src/routes/projects/junia.svelte",
+      "src/routes/projects.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-99718719.js",
+    "file": "_app/immutable/pages/__layout.svelte-9712bca7.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-0fe1eadc.js"
+      "_index-06ce5a74.js"
     ],
     "css": [
-      "_app/immutable/assets/__layout-7c3e5d10.css"
+      "_app/immutable/assets/__layout-a8dc178c.css"
     ],
     "assets": [
       "_app/immutable/assets/roboto-cyrillic-ext-400-normal-b7ef2cd1.woff2",
@@ -97,35 +106,80 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "_app/immutable/error.svelte-301cd6dd.js",
+    "file": "_app/immutable/error.svelte-55b2220d.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-0fe1eadc.js"
+      "_index-06ce5a74.js"
+    ]
+  },
+  "src/routes/about.svelte": {
+    "file": "_app/immutable/pages/about.svelte-ae791ed7.js",
+    "src": "src/routes/about.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-06ce5a74.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-f5882117.js",
+    "file": "_app/immutable/pages/index.svelte-f290bdcb.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-0fe1eadc.js"
-    ],
-    "css": [
-      "_app/immutable/assets/index-548b5b0d.css"
+      "_index-06ce5a74.js"
     ]
   },
-  "_index-0fe1eadc.js": {
-    "file": "_app/immutable/chunks/index-0fe1eadc.js"
+  "src/routes/projects/junia/docs/getting-started.svelte": {
+    "file": "_app/immutable/pages/projects/junia/docs/getting-started.svelte-842a4bba.js",
+    "src": "src/routes/projects/junia/docs/getting-started.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-06ce5a74.js"
+    ],
+    "css": [
+      "_app/immutable/assets/getting-started-6de2735d.css"
+    ]
+  },
+  "src/routes/projects/junia/docs.svelte": {
+    "file": "_app/immutable/pages/projects/junia/docs.svelte-f5c2f832.js",
+    "src": "src/routes/projects/junia/docs.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-06ce5a74.js"
+    ]
+  },
+  "src/routes/projects/junia.svelte": {
+    "file": "_app/immutable/pages/projects/junia.svelte-bf1b034b.js",
+    "src": "src/routes/projects/junia.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-06ce5a74.js"
+    ]
+  },
+  "src/routes/projects.svelte": {
+    "file": "_app/immutable/pages/projects.svelte-aa25901d.js",
+    "src": "src/routes/projects.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-06ce5a74.js"
+    ]
+  },
+  "_index-06ce5a74.js": {
+    "file": "_app/immutable/chunks/index-06ce5a74.js"
   },
   "src/routes\\__layout.css": {
-    "file": "_app/immutable/assets/__layout-7c3e5d10.css",
+    "file": "_app/immutable/assets/__layout-a8dc178c.css",
     "src": "src/routes\\__layout.css"
   },
-  "src/routes\\index.css": {
-    "file": "_app/immutable/assets/index-548b5b0d.css",
-    "src": "src/routes\\index.css"
+  "src/routes/projects/junia/docs\\getting-started.css": {
+    "file": "_app/immutable/assets/getting-started-6de2735d.css",
+    "src": "src/routes/projects/junia/docs\\getting-started.css"
   }
 }
