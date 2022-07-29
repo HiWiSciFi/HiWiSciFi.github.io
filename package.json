@@ -27,6 +27,7 @@
 		"@fontsource/fira-mono": "^4.5.8",
 		"@fontsource/roboto": "^4.5.7",
 		"gh-pages": "^4.0.0",
+		"mdsvex": "^0.10.6",
 		"svelte-highlight": "^6.2.0"
 	}
 }
