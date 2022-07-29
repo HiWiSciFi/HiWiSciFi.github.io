@@ -4,7 +4,7 @@ ghpages.publish(
     'build',
     {
         branch: 'gh-pages',
-        repo: 'https://github.com/HiWiSciFi/HiWiSciFi,github.io.git',
+        repo: 'https://github.com/HiWiSciFi/HiWiSciFi.github.io.git',
         user: {
             name: 'Max Hager',
             email: '19999080+HiWiSciFi@users.noreply.github.com'
