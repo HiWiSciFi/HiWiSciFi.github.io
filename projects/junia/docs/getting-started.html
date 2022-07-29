@@ -6,11 +6,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content=""><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,.hljs-formula,.hljs-keyword{color:#c678dd}.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#98c379}.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-link{text-decoration:underline}</style><!-- HTML_TAG_END --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,.hljs-formula,.hljs-keyword{color:#c678dd}.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#98c379}.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-link{text-decoration:underline}</style><!-- HTML_TAG_END -->
 	<link rel="stylesheet" href="/_app/immutable/assets/__layout-a8dc178c.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/getting-started-6de2735d.css">
-	<link rel="modulepreload" href="/_app/immutable/start-733ce583.js">
+	<link rel="stylesheet" href="/_app/immutable/assets/getting-started-de2f5d23.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/block-code-548b5b0d.css">
+	<link rel="modulepreload" href="/_app/immutable/start-4e459f04.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-06ce5a74.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-9712bca7.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/projects/junia/docs/getting-started.svelte-842a4bba.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/projects/junia/docs/getting-started.svelte-c6e8bc80.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/block-code-67a0def5.js">
 	</head>
 	<body>
 		<div>
@@ -56,71 +58,69 @@
 </header>
 
 <main class="svelte-1izrdc8"><div style="display: block"><h1>Getting started</h1>
-
-	<h2>Installing and linking Junia</h2>
-	<b><i>!!! As of now it is required to use the premade Testproject for development !!!</i></b><br>
-	Once you execute the project generation file (generates vs2022 project) all required files will be created!
-
-	<h2>Getting started</h2>
-	In order to initialize Junia you do not need a main function, but implement the
-	<code class="svelte-1fwu7hk">Junia::Application* CreateApplication()
+<h2>Installing and linking Junia</h2>
+<b><i>!!! As of now it is required to use the premade Testproject for development !!!</i></b><br>
+Once you execute the project generation file (generates vs2022 project) all required files will be created!
+<h2>Getting started</h2>
+In order to initialize Junia you do not need a main function, but implement the
+<code class="svelte-1fwu7hk">Junia::Application* CreateApplication()
 </code> function after including the
-	<code class="svelte-1fwu7hk">&lt;Junia/Core/EntryPoint.hpp>
+<code class="svelte-1fwu7hk">&lt;Junia/Core/EntryPoint.hpp>
 </code> header. You can use the CreateApplication function or the
-	constructor of your Application class as a main function in case you need to initialize something yourself. Your main
-	file should look something like this:
+constructor of your Application class as a main function in case you need to initialize something yourself. Your main
+file should look something like this:
 
-	
+
 
 
   
   <pre data-language="cpp" class=" svelte-4cqgwq"><code class="hljs"><!-- HTML_TAG_START --><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;Junia.hpp&gt;</span></span>
-	<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;Junia/Core/EntryPoint.hpp&gt;</span></span>
-		
-	<span class="hljs-keyword">class</span> <span class="hljs-title class_">Testapp</span> : <span class="hljs-keyword">public</span> Junia::Application
-	{
-	<span class="hljs-keyword">public</span>:
-		<span class="hljs-built_in">Testapp</span>()
-		{
-			<span class="hljs-comment">/* Initialization code */</span>
-		}
-		
-		~<span class="hljs-built_in">Testapp</span>() <span class="hljs-keyword">override</span> = <span class="hljs-keyword">default</span>;
-	}
-		
-	<span class="hljs-function">Junia::Application* <span class="hljs-title">CreateApplication</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Testapp</span>(); }<!-- HTML_TAG_END --></code></pre>
-
-
-	If you were to compile and execute the application now you would end up with an empty window.
-	<p></p>
-	In order to be able to hook into the game loop you have to create and attach a layer.
-
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;Junia/Core/EntryPoint.hpp&gt;</span></span>
 	
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Testapp</span> : <span class="hljs-keyword">public</span> Junia::Application
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">Testapp</span>()
+    {
+        <span class="hljs-comment">/* Initialization code */</span>
+    }
+    
+    ~<span class="hljs-built_in">Testapp</span>() <span class="hljs-keyword">override</span> = <span class="hljs-keyword">default</span>;
+}
+	
+<span class="hljs-function">Junia::Application* <span class="hljs-title">CreateApplication</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Testapp</span>(); }<!-- HTML_TAG_END --></code></pre>
+
+
+If you were to compile and execute the application now you would end up with an empty window.
+<p></p>
+In order to be able to hook into the game loop you have to create and attach a layer.
+
+
 
 
   
   <pre data-language="cpp" class=" svelte-4cqgwq"><code class="hljs"><!-- HTML_TAG_START --><span class="hljs-keyword">class</span> <span class="hljs-title class_">ExampleLayer</span> : <span class="hljs-keyword">public</span> Junia::Layer
-	{
-	<span class="hljs-keyword">public</span>:
-		<span class="hljs-built_in">ExampleLayer</span>() : Junia::<span class="hljs-built_in">Layer</span>(<span class="hljs-string">&quot;ExampleLayer&quot;</span>) { }
-	}<!-- HTML_TAG_END --></code></pre>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">ExampleLayer</span>() : Junia::<span class="hljs-built_in">Layer</span>(<span class="hljs-string">&quot;ExampleLayer&quot;</span>) { }
+}<!-- HTML_TAG_END --></code></pre>
 
 
-	Extend the constructor of your application class to call <code class="svelte-1fwu7hk">PushLayerBack(new ExampleLayer());
+Extend the constructor of your application class to call <code class="svelte-1fwu7hk">PushLayerBack(new ExampleLayer());
 </code> in order to attach the layer.<br>
-	The Layer class provides four member functions you might want to override in order to take control of the scene.<br></div></main>
+The Layer class provides four member functions you might want to override in order to take control of the scene.<br></div></main>
 
 <footer class="svelte-1izrdc8"><p>This page is still in development. Check out my <a href="https://github.com/HiWiSciFi" class="svelte-1izrdc8">GitHub</a> in the meantime!</p>
 </footer>
 
 
-		<script type="module" data-sveltekit-hydrate="tcthxm">
-		import { set_public_env, start } from "/_app/immutable/start-733ce583.js";
+		<script type="module" data-sveltekit-hydrate="1uwzstm">
+		import { set_public_env, start } from "/_app/immutable/start-4e459f04.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="tcthxm"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1uwzstm"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -129,7 +129,7 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 4],
+				nodes: [0, 5],
 				params: {},
 				routeId: "projects/junia/docs/getting-started"
 			}
