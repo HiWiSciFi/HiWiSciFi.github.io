@@ -1,14 +1,27 @@
 <script lang="ts">
-	export let code : string | undefined = "";
+	export let code : string | undefined = undefined;
+	export let url : string | undefined = undefined;
 </script>
 
-<code>
-{#if code != undefined}
-	{code}
+{#if url != undefined}
+<a href="{url}">
+	<code>
+		{#if code != undefined}
+			{code}
+		{:else}
+			<slot/>
+		{/if}
+		</code>
+</a>
 {:else}
-	<slot/>
+<code>
+	{#if code != undefined}
+		{code}
+	{:else}
+		<slot/>
+	{/if}
+	</code>
 {/if}
-</code>
 
 <style>
 	code {

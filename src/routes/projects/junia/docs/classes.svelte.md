@@ -9,11 +9,3 @@ Who would have thought that this is markdown?
     console.log("Hehe");
 }`}"/>
 Code i guess
-
-```cpp
-int main(int argc, char** argv) {
-    x++;
-}
-```
-
-but markdown style!

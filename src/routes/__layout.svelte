@@ -6,7 +6,9 @@
 <Header />
 
 <main>
-	<slot />
+	<div style="display: block;">
+		<slot />
+	</div>
 </main>
 
 <footer>
